@@ -1,0 +1,56 @@
+/* -------сброс базовых настрек */
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--title-text-color);
+    font-family: Raleway;
+    Font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.page {
+    background-color: #fff;
+    color: #757575;
+}

@@ -1,0 +1,16 @@
+/* цвет заголовка и футера h1 #FFFFFF */
+/* цвет лого #2196F3  #000000*/
+/* цвет оcновного текста #757575 */
+/* цвет заголовка h2-h3 #212121*/
+/* цвет акцента 2196F3*/
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #FFFFFF;
+    --bg-color: #2F303A;
+    --icon-color: #afb1b8;
+    --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
