@@ -26,6 +26,12 @@
                     <li class="main-item"><a href="" class="link">Контакти</a></li>
                 </ul>
             </nav>
+
+            <button type="button" class="mobile-menu-open" data-menu-open>
+                <svg class="mobile-menu-open__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#burger-icon"></use>
+                </svg>
+            </button>
     
         <ul class="contact-nav list">
             <li class="contact-list link">
@@ -43,6 +49,37 @@
             </li>
         </ul>
         </div>
+
+        <!-- мобильное меню  -->
+        <div class="mobile-menu " data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+        
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__items"><a href="./index.html" class="mobile-menu__link-curent">Студія</a></li>
+                    <li class="mobile-menu__items"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+                    <li class="mobile-menu__items"><a href="" class="mobile-menu__link">Контакти</a></li>
+                </ul>
+        
+                <ul class="mobile-menu__contact">
+                    <li class="mobile-menu__contact-phone "><a href="" class="mobile-menu__link-phone">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contact-mail "><a href="" class="mobile-menu__link-mail">info@devstudio.com</a></li>
+                </ul>
+        
+                <ul class="mobile-menu__social-list social-list__item ">
+                    <li class="mobile-menu__social-item "><a href="" class="mobile-menu__link-item">Instagram</a></li>
+                    <li class="mobile-menu__social-item "><a href="" class="mobile-menu__link-item">Twitter</a></li>
+                    <li class="mobile-menu__social-item "><a href="" class="mobile-menu__link-item">Facebook</a></li>
+                    <li class="mobile-menu__social-item "><a href="" class="mobile-menu__link-item">LinkedIn</a></li>
+                </ul>
+        
+        
+            </div>
     </header>
 
     <!--Фильтр-->
@@ -53,7 +90,7 @@
         
         <h1 hidden class="section-title">filter</h1>
         <ul class="feature-list button-portfolio link">
-            <li><button class="button button-primary" type="button">Все</button></li>
+            <li><button class="button button-primary" type="button">Усі</button></li>
             <li class="list-botton"><button class="button button-secondary" type="button">Веб-сайти</button></li>
             <li class="list-botton"><button class="button button-secondary" type="button">Додатки</button></li>
             <li class="list-botton"><button class="button button-secondary" type="button">Дизайн</button></li>
@@ -67,7 +104,7 @@
             <li class="portfolio__item">
                 <a href="#" class="portfolio__link">
                     <div class="portfolio__thumb">
-                    <img src="images/Технокряк.jpg" alt="Фото" width="370" Height="294">
+                    <img class="portfolio__img" src="images/desktop/portfolio_desktop1.jpg" alt="Фото" width="370" Height="294">
                     <p class="portfolio__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -81,7 +118,7 @@
             <li class="portfolio-card">
                 <a href="#" class="portfolio__link">
                     <div class="portfolio__thumb">
-                        <img src="images/ПостерNewOrleanvsGoldenStar.jpg" alt="Фото" width="370" Height="294">
+                        <img class="portfolio__img" src="images/desktop/portfolio_desktop2.jpg" alt="Фото" width="370" Height="294">
                         <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda distinctio quas impedit vel exercitationem libero ratione, pariatur officiis aliquam expedita dolores inventore rerum repellendus consequuntur quibusdam, tenetur non quisquam.</p>
                     </div>
                     <div class="portfolio__box">
@@ -95,7 +132,7 @@
             <li class="portfolio-card">
                 <a href="#" class="portfolio__link">
                     <div class="portfolio__thumb">
-                    <img src="images/РесторанSeafood.jpg" alt="Фото" width="370" Height="294">
+                    <img class="portfolio__img" src="images/desktop/portfolio_desktop3.jpg" alt="Фото" width="370" Height="294">
                     <p class="portfolio__overlay"></p>
                     </div>
                         <div class="portfolio__box">
@@ -108,7 +145,7 @@
             <li class="portfolio-card">
                 <a href="#" class="portfolio__link">
                     <div class="portfolio__thumb">
-                        <img src="images/ПроектPrime.jpg" alt="Фото" width="370" Height="294">
+                        <img class="portfolio__img"  src="images/desktop/portfolio_desktop4.jpg" alt="Фото" width="370" Height="294">
                         <p class="portfolio__overlay"></p>
                     </div>
                     <div class="portfolio__box">
@@ -121,7 +158,7 @@
             <li class="portfolio-card">
                 <a href="#" class="portfolio__link">
                     <div class="portfolio__thumb">
-                        <img src="images/ПроектBoxes.jpg" alt="Фото" width="370" Height="294">
+                        <img class="portfolio__img"  src="images/desktop/portfolio_desktop5.jpg" alt="Фото" width="370" Height="294">
                         <p class="portfolio__overlay"></p>
                     </div>
                     <div class="portfolio__box">
@@ -134,7 +171,7 @@
             <li class="portfolio-card">
                 <a href="#" class="portfolio__link">
                     <div class="portfolio__thumb">
-                        <img src="images/InspirationhasnoBorders.jpg" alt="Фото" width="370" Height="294">
+                        <img class="portfolio__img"  src="images/desktop/portfolio_desktop6.jpg" alt="Фото" width="370" Height="294">
                         <p class="portfolio__overlay"></p>
                     </div>
                     <div class="portfolio__box">
@@ -147,7 +184,7 @@
             <li class="portfolio-card">
                 <a href="#" class="portfolio__link">
                     <div class="portfolio__thumb">
-                        <img src="images/ИзданиеLimitedEdition.jpg" alt="Фото" width="370" Height="294">
+                        <img class="portfolio__img" src="images/desktop/portfolio_desktop7.jpg" alt="Фото" width="370" Height="294">
                         <p class="portfolio__overlay"></p>
                     </div>
                     <div class="portfolio__box">
@@ -160,7 +197,7 @@
             <li class="portfolio-card">
                 <a href="#" class="portfolio__link">
                     <div class="portfolio__thumb">
-                        <img src="images/ПроектLAB.jpg" alt="Фото" width="370" Height="294">
+                        <img class="portfolio__img" src="images/desktop/portfolio_desktop8.jpg" alt="Фото" width="370" Height="294">
                         <p class="portfolio__overlay"></p>
                     </div>
                     <div class="portfolio__box">
@@ -173,7 +210,7 @@
             <li class="portfolio-card">
                 <a href="#" class="portfolio__link">
                     <div class="portfolio__thumb">
-                        <img src="images/GrowingBusiness.jpg" alt="Фото" width="370" Height="294">
+                        <img class="portfolio__img" src="images/desktop/portfolio_desktop9.jpg" alt="Фото" width="370" Height="294">
                         <p class="portfolio__overlay"></p>
                     </div>
                     <div class="portfolio__box">
@@ -192,59 +229,64 @@
     <!--Футер-->
 <footer class="footer">
     <div class="container__footer">
+        <div class="footer__tablet-wrap">
+            <div class="card__adress">
+                <a href="/" lang="en" class="link logo-footer"><span class="accent">Web</span>Studio</a>
+                <address>
+                    <ul class="footer__list font-style">
+                        <li class="footer__list"><a href="https://goo.gl/maps/twGr682eux7RJb1C9" target="_blank"
+                                rel=" noopener noreferrer" class="footer-link-current">м. Київ, пр-т Лесі Українки,
+                                26</a></li>
+                        <li class=""><a href="mailto:info@example.com"
+                                class="footer-link-current info">info@example.com</a></li>
+                        <li class=""><a href="tel:+380991111111" class="footer-link-current info">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
 
-        <div class="card__adress">
-            <a href="/" lang="en" class="link logo-footer"><span class="accent">Web</span>Studio</a>
-            <address>
-                <ul class="footer__list font-style">
-                    <li class="footer__list"><a href="https://goo.gl/maps/twGr682eux7RJb1C9" target="_blank"
-                            rel=" noopener noreferrer" class="footer-link-current">м. Київ, пр-т Лесі Українки, 26</a>
+            <div class="card__social">
+                <p class="card__tytle">приєднуйтесь</p>
+                <ul class="card__sn">
+
+                    <li class="card__social">
+                        <a href="" class="card__sn-link in-footer">
+                            <svg class="sn-icon">
+                                <use href=./images/sprite.svg#icon-instagram2></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class=""><a href="mailto:info@example.com" class="footer-link-current info">info@example.com</a>
+
+                    <li class="card__social">
+                        <a href="" class="card__sn-link in-footer">
+                            <svg class="sn-icon">
+                                <use href=./images/sprite.svg#icon-twitter></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class=""><a href="tel:+380991111111" class="footer-link-current info">+38 099 111 11 11</a></li>
+
+
+                    <li class="card__social">
+                        <a href="" class="card__sn-link in-footer">
+                            <svg class="sn-icon">
+                                <use href=./images/sprite.svg#icon-facebook></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="card__social">
+                        <a href="" class="card__sn-link in-footer">
+                            <svg class="sn-icon">
+                                <use href=./images/sprite.svg#icon-linkedin></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
+
         </div>
 
-        <div class="card__social">
-            <p class="card__tytle">приєднуйтесь</p>
-            <ul class="card__sn">
 
-                <li class="card__social">
-                    <a href="" class="card__sn-link in-footer">
-                        <svg class="sn-icon">
-                            <use href=./images/sprite.svg#icon-instagram2></use>
-                        </svg>
-                    </a>
-                </li>
-
-                <li class="card__social">
-                    <a href="" class="card__sn-link in-footer">
-                        <svg class="sn-icon">
-                            <use href=./images/sprite.svg#icon-twitter></use>
-                        </svg>
-                    </a>
-                </li>
-
-
-                <li class="card__social">
-                    <a href="" class="card__sn-link in-footer">
-                        <svg class="sn-icon">
-                            <use href=./images/sprite.svg#icon-facebook></use>
-                        </svg>
-                    </a>
-                </li>
-
-                <li class="card__social">
-                    <a href="" class="card__sn-link in-footer">
-                        <svg class="sn-icon">
-                            <use href=./images/sprite.svg#icon-linkedin></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
 
         <div class="">
             <p class="form__text"> Підпишіться на розсилку</p>
@@ -269,6 +311,9 @@
         </div>
     </div>
 </footer>
+
+<script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
