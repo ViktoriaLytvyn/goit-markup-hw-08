@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <!-- <link rel="stylesheet" href="media.scss" media="only screen and (max-width: 767px) and (min-width: 767px) and (min-width: 1200px)  "> -->
     
 </head>
 
@@ -55,7 +56,7 @@
     </div>
 
     <!-- мобильное меню  -->
-    <div class="mobile-menu is-open" data-menu>
+    <div class="mobile-menu " data-menu>
       <div class="container mobile-menu__container" >
         <button class="mobile-menu__close-btn" data-menu-close>
           <svg class="mobile-menu__close-icon" width="40" height="40">
@@ -93,16 +94,16 @@
 
     <!--О компании / Герой-->
 
-    <!-- <section class="hero">
+    <section class="hero">
       <div class="container-hero">
           <h1 class="hero-title"> ЕФЕКТИВНІ РІШЕННЯ <br>ДЛЯ ВАШОГО БІЗНЕСУ </h1>
           <button type="button" class="button-hero button" data-modal-open >Замовити послугу</button>
       </div>
-    </section> -->
+    </section>
   
 
     <!--======преимущества=======-->
-    <!-- <section class="section section-advanteges">
+    <section class="section section-advanteges">
       <div class="container">
       <h2 hidden class="section-plas">Преимущества </h2>
        <ul class="feature-list container-advantage">
@@ -148,12 +149,12 @@
         </li>
       </ul>
       </div>
-    </section> -->
+    </section>
 
 
     <!--Чем мы занимаемся-->
 
-    <!-- <section class="section section-doing">
+    <section class="section section-doing">
       <div class="container">
       <h2 class="activity">Чим ми займаємося </h2>
       <ul class="list container-activity">
@@ -180,17 +181,17 @@
         </li>
       </ul>
       </div>
-    </section> -->
+    </section>
     
     
     <!--Наша команда-->
 
-    <!-- <section class="employees-section">
+     <section class="employees-section">
       <div class="container">
       <h2 class="team">Наша команда</h2>
       <ul class="list container-team">
         <li class="team-card">
-          <img src="images/img1.jpg" alt="Фото" width="270">
+          <img class="team__photo" src="images/desktop/img_desktop1.jpg" alt="Фото" >
           <div class="team-dox">
               <h3 class="team-name"> Игорь Демьяненко</h3>
               <p class="team-profession" lang="en">Product Designer</p>
@@ -232,7 +233,7 @@
        
       </li>
         <li  class="team-card">
-          <img src="images/img2.jpg" alt="Фото" width="270">
+          <img class="team__photo" src="images/desktop/img_desktop2.jpg" alt="Фото" >
           <div class="team-dox">
           <h3 class="team-name"> Ольга Репина</h3>
           <p class="team-profession" lang="en">Frontend Developer</p>
@@ -272,7 +273,7 @@
           </div>
         </li>
         <li class="team-card">
-          <img src="images/img3.jpg" alt="Фото" width="270">
+          <img class="team__photo"  src="images/desktop/img_desktop3.jpg" alt="Фото" >
           <div class="team-dox">
           <h3 class="team-name"> Николай Тарасов</h3>
           <p class="team-profession" lang="en"> Marketing </p>
@@ -312,7 +313,7 @@
         </li>
 
         <li class="team-card">
-          <img src="images/img4.jpg" alt="Фото" width="270">
+          <img class="team__photo"  src="images/desktop/img_desktop4.jpg" alt="Фото" >
           <div class="team-dox">
           <h3 class="team-name"> Михаил Ермаков</h3>
           <p class="team-profession" lang="en">UI Designer</p>
@@ -353,18 +354,18 @@
       </ul>
       </div>
     </section>
-  </main> -->
+  </main>
 
       <!--Постійні клієнт-->
 
 
-<!-- <section class="section section-clients">
+<section class="section section-clients">
     <div class="container container-clients"> 
-              <h2 class="clients">Постійні клієнти </h2> -->
+              <h2 class="clients">Постійні клієнти </h2>
 
-<!-- <div class="clients-icon"> -->
+<div class="clients-icon">
 
-        <!-- <ul class="clients-list list">
+        <ul class="clients-list list">
           <li class="clients-item">
             <a href="" class="clients-link"> 
               <svg class="сlients-icon">
@@ -412,16 +413,17 @@
         </ul>
      
 </div>    
-  </section> -->
+</div>
+</section>
 
   
   <!--Футер-->
 
 
-<!-- >  <footer class="footer">
+<footer class="footer">
     <div class="container__footer">
- 
-      <div class="card__adress">
+      <div class="footer__tablet-wrap">
+        <div class="card__adress">
           <a href="/" lang="en" class="link logo-footer"><span class="accent">Web</span>Studio</a>
               <address>
                 <ul class="footer__list font-style">
@@ -472,6 +474,10 @@
         </ul>
       </div>
 
+      </div>
+ 
+      
+
       <div class="">
           <p class="form__text"> Підпишіться на розсилку</p>
           
@@ -500,7 +506,8 @@
           
       </div>
     </div>
-  </footer> -->
+  </footer>
+
 
  <!-- modal window -->
 
