@@ -34,9 +34,19 @@ gap: 30px;
 list-style: none;
 }
 
-// .portfolio__item {
-//     flex-basis: calc((100% - 60px) / 3);
-// }
+.feature-list {
+    display: flex;
+    flex-direction: calc(100% / 2);
+    flex-wrap: wrap;
+    margin-right: 8px;
+    // align-self: flex-start;
+    justify-content: left;
+   }
+
+
+.list-botton{
+    flex-basis: calc((100% ) / 4);
+}
 
 .portfolio__link {
     display: block;

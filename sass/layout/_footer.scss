@@ -580,11 +580,7 @@ margin: 0 auto;
 
     /* футер - частина Підпишіться на розсилку */
 
-    .form {
-        display: flex;
-    }
-
-    .form__text {
+     .form__text {
         color: var(--primary-bg-color);
         font-weight: 700;
         font-size: 14px;

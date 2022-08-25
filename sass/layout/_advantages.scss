@@ -8,6 +8,7 @@
 display: block;
 text-align: center;
 gap: 30px;
+list-style: none;
         }
 
 .plas-card {
@@ -34,6 +35,7 @@ flex-basis: calc((100% - 60px) / 3);
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    text-align: justify;
 }
 
 .section-advanteges {
@@ -68,6 +70,8 @@ flex-basis: calc((100% - 60px) / 3);
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    list-style: none;
+
  }
 
    
