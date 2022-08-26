@@ -112,6 +112,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   transition: box-shadow var(--transition-dur-and-func), color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+  white-space: nowrap;
 }
 .button:hover {
   color: var(--primary-bg-color);
@@ -843,15 +844,14 @@ body {
     color: var(--accent-color);
     margin-right: 20px;
   }
-  .social-list__item:not(:last-child) {
+  .mobile-menu__link-item::after {
     position: absolute;
-    content: " ";
+    content: "";
     width: 22px;
-    height: 4px;
-    display: block;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    height: 1px;
+    display: inline;
+    background-color: rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
-    margin-left: 10px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1044,13 +1044,20 @@ body {
     padding-bottom: 118px;
     background-color: var(--bg-color);
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/Header_mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/header_mobile.jpg);
     background-size: cover;
     background-color: #C4C4C4;
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (max-width: 767px) and (min-resolution: 192dpi) and (max-width: 767px), screen and (max-width: 767px) and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/header_mobile@2x.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
   .hero-title {
     color: var(--primary-bg-color);
     font-weight: 900;
@@ -1060,7 +1067,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -1073,6 +1080,13 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/Header_tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
   .hero-title {
     color: var(--primary-bg-color);
     font-weight: 900;
@@ -1095,6 +1109,13 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/Header_desktop@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero-title {
     color: var(--primary-bg-color);
     font-weight: 900;
@@ -1117,7 +1138,7 @@ body {
     flex-basis: calc((100% - 60px) / 3);
   }
   .plas-card:not(:last-child) {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   .plas {
     color: var(--title-text-color);
@@ -1327,7 +1348,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 24px;
   }
   .team__photo {
     width: 450px;
@@ -1399,7 +1419,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 24px;
   }
   .team__photo {
     width: 354px;
@@ -1553,13 +1572,13 @@ body {
   }
   .feature-list {
     display: flex;
-    flex-direction: 50%;
     flex-wrap: wrap;
     margin-right: 8px;
     justify-content: left;
   }
   .list-botton {
-    flex-basis: 25%;
+    flex-basis: auto;
+    margin-bottom: 15px;
   }
   .portfolio__link {
     display: block;
@@ -1771,10 +1790,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .clients-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    gap: 30px;
   }
   .clients-item {
     width: calc(50% - 30px);
@@ -1821,10 +1837,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .clients-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    gap: 30px;
   }
   .clients-item {
     width: calc(33.3333333333% - 30px);
@@ -1906,7 +1919,6 @@ body {
     color: var(--accent-color);
   }
 }
-/* ==========Футер */
 @media screen and (max-width: 767px) {
   .footer {
     background-color: var(--title-text-color);
@@ -1924,6 +1936,9 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+  .footer__tablet-wrap {
+    margin-bottom: 60px;
   }
   .logo-footer {
     color: var(--primary-bg-color);
@@ -1964,7 +1979,6 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-bottom: 60px;
   }
   .card__adress {
     margin-right: 0px;
@@ -1972,6 +1986,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin-bottom: 60px;
   }
   /* футер - частина приеднуйтесь */
   .card__social {
@@ -1984,7 +1999,6 @@ body {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin-bottom: 60px;
   }
   .card__social:not(:last-child) {
     margin-right: 10px;
@@ -2023,11 +2037,14 @@ body {
   /* футер - частина Підпишіться на розсилку */
   .form {
     display: flex;
-    flex-direction: column;
     width: 100%;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
+  }
+  .form__label {
+    margin-bottom: 20px;
   }
   .form__text {
     color: var(--primary-bg-color);
@@ -2046,9 +2063,6 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-  }
-  .form__label {
-    margin-bottom: 20px;
   }
   .footer-form-input-icon {
     width: 24px;
@@ -2109,6 +2123,7 @@ body {
   }
   .footer__tablet-wrap {
     display: flex;
+    justify-content: space-around;
     margin-bottom: 60px;
   }
   .logo-footer {
@@ -2203,11 +2218,11 @@ body {
   /* футер - частина Підпишіться на розсилку */
   .form {
     display: flex;
-    flex-direction: column;
     width: 100%;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
   }
   .form__text {
     color: var(--primary-bg-color);
@@ -2220,12 +2235,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-  }
-  .card__actions {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
   }
   .form__label {
     margin-bottom: 20px;
@@ -2291,7 +2300,6 @@ body {
   }
   .footer__tablet-wrap {
     display: flex;
-    margin-bottom: 60px;
     align-items: flex-start;
   }
   .logo-footer {
@@ -2336,113 +2344,114 @@ body {
   }
   /* футер - частина приеднуйтесь */
   .card__social {
-    margin-right: 93px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 15;
   }
-}
-.card__sn {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-.card__social:not(:last-child) {
-  margin-right: 10px;
-}
-
-.card__tytle {
-  color: var(--primary-bg-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.sn-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.in-footer {
-  transition: background-color var(--transition-dur-and-func);
-}
-.in-footer:hover, .in-footer:focus {
-  background-color: var(--accent-color);
-}
-
-.card__sn-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* футер - частина Підпишіться на розсилку */
-.form__text {
-  color: var(--primary-bg-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.card__actions {
-  display: flex;
-}
-
-.footer-form-input-icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: #FFFFFF;
-  transition: fill var(--transition-dur-and-func);
-}
-
-.footer-form-input {
-  color: var(--primary-bg-color);
-  text-transform: inherit;
-  width: 358px;
-  height: 50px;
-  padding: 16px 15px;
-  transition: border-color var(--transition-dur-and-func);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  margin-right: 12px;
-  background-color: var(--title-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-.form__button {
-  font-weight: 700;
-  display: inline-flex;
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--primary-bg-color);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 28px;
-  padding-left: 28px;
-  justify-content: center;
-  align-content: center;
-  width: 200px;
-  height: 50px;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  .card__sn {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .card__social:not(:last-child) {
+    margin-right: 10px;
+  }
+  .card__tytle {
+    color: var(--primary-bg-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .sn-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+  .in-footer {
+    transition: background-color var(--transition-dur-and-func);
+  }
+  .in-footer:hover, .in-footer:focus {
+    background-color: var(--accent-color);
+  }
+  .card__sn-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  /* футер - частина Підпишіться на розсилку */
+  .form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .form__label {
+    margin-bottom: 0px;
+  }
+  .form__text {
+    color: var(--primary-bg-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .card__actions {
+    display: flex;
+  }
+  .footer-form-input-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: #FFFFFF;
+    transition: fill var(--transition-dur-and-func);
+  }
+  .footer-form-input {
+    color: var(--primary-bg-color);
+    text-transform: inherit;
+    width: 358px;
+    height: 50px;
+    padding: 16px 15px;
+    transition: border-color var(--transition-dur-and-func);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    background-color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .form__button {
+    font-weight: 700;
+    display: inline-flex;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-bg-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 28px;
+    padding-left: 28px;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
 }/*# sourceMappingURL=main.css.map */
