@@ -36,7 +36,7 @@ list-style: none;
 
 .feature-list {
     display: flex;
-    flex-direction: calc(100% / 2);
+    // flex-direction: calc(100% / 2);
     flex-wrap: wrap;
     margin-right: 8px;
     // align-self: flex-start;
@@ -45,7 +45,8 @@ list-style: none;
 
 
 .list-botton{
-    flex-basis: calc((100% ) / 4);
+    flex-basis: auto;
+    margin-bottom: 15px;
 }
 
 .portfolio__link {

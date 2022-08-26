@@ -1,66 +1,66 @@
 /* ================чем мы занимаемся / doing========*/
 @media screen and (max-width: 767px) {
-    .section-doing {
-            display: none;
-            visibility: hidden;
-        }
-    }
+.section-doing {
+display: none;
+visibility: hidden;
+}
+}
 
 
-    // /======TABLET===========/ 
+// /======TABLET==========/ 
 
 @media screen and (min-width: 767px) {
-    .section-doing {
-        display: none;
-        visibility: hidden;
-        }
-    }
+.section-doing {
+display: none;
+visibility: hidden;
+}
+}
 
 
-        //  Desktop
+// ======= Desktop
 
 @media screen and (min-width: 1200px) {
 .section-doing {
-        display: contents;
-        visibility: visible;
-    }
+display: contents;
+visibility: visible;
+}
     
-    .activity {
-            color: var(--title-text-color);
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 1.16;
-            text-align: center;
-            margin-bottom: 50px;
-        }
+.activity {
+color: var(--title-text-color);
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+margin-bottom: 50px;
+}
     
-        .container-activity {
-            display: flex;
-            gap: 30px;
-        }
+.container-activity {
+display: flex;
+gap: 30px;
+}
     
-        .section-doing {
-            padding-bottom: 94px;
-        }
+.section-doing {
+padding-bottom: 94px;
+}
     
-        .activity-card-wrapper {
-            position: relative;
-        }
+.activity-card-wrapper {
+position: relative;
+}
     
-        .overlay-doing {
-            position: absolute;
-            left: 0px;
-            bottom: 0px;
-            width: 100%;
-            height: 70px;
-            line-height: 1.14;
-            color: #FFFFFF;
-            padding-top: 27px;
-            padding-bottom: 27px;
-            text-align: center;
-            text-transform: uppercase;
-            background-color: rgba(47, 48, 58, 0.8);
-        }
+.overlay-doing {
+position: absolute;
+left: 0px;
+bottom: 0px;
+width: 100%;
+height: 70px;
+line-height: 1.14;
+color: #FFFFFF;
+padding-top: 27px;
+padding-bottom: 27px;
+text-align: center;
+text-transform: uppercase;
+background-color: rgba(47, 48, 58, 0.8);
+}
 }
 
 

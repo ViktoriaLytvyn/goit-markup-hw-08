@@ -11,7 +11,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     transition: box-shadow var(--transition-dur-and-func), color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
-
+    white-space: nowrap;
+    
     &:hover {
         color: var(--primary-bg-color);
         background-color: var(--accent-color);

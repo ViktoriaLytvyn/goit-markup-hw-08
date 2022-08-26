@@ -144,16 +144,20 @@
             margin-right: 20px;
 
          }
+                //  :not(:last-child)
 
-        .social-list__item:not(:last-child) {
+        .mobile-menu__link-item::after {
             position: absolute;
-            content: " ";
+            content: '';
             width: 22px;
-            height: 4px;
-            display: block;
-            border: 1px solid rgba(33, 33, 33, 0.2);
+            height: 1px;
+            display: inline;
+            background-color:  rgba(33, 33, 33, 0.2);
             transform: rotate(90deg);
-            margin-left: 10px;}
+            // margin-left: 10px;
+            
+        }
+            
         }
 
 
