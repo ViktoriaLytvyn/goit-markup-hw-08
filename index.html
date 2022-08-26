@@ -191,7 +191,21 @@
       <h2 class="team">Наша команда</h2>
       <ul class="list container-team">
         <li class="team-card">
-          <img class="team__photo" src="images/desktop/img_desktop1.jpg" alt="Фото" >
+
+          <picture>
+            <source srcset="./images/desktop/img_desktop1.jpg 1x, ./images/desktop/img_desktop1@2x.jpg 2x"
+            media="(min-width: 1200px)"
+            />
+
+            <source srcset="./images/tablet/img_tablet.jpg 1x, ./images/tablet/img_tablet@2x.jpg 2x"
+              media="(min-width: 768px)" />
+
+            <source srcset="./images/mobile/img_mobile1.jpg 1x, ./images/mobile/img_mobile1@2x.jpg 2x"
+              media="(min-width: 280px)" />
+          
+            <img class="team__photo" src="images/mobile/img_mobile1.jpg" alt="Фото">
+          </picture>
+
           <div class="team-dox">
               <h3 class="team-name"> Игорь Демьяненко</h3>
               <p class="team-profession" lang="en">Product Designer</p>
@@ -233,7 +247,18 @@
        
       </li>
         <li  class="team-card">
-          <img class="team__photo" src="images/desktop/img_desktop2.jpg" alt="Фото" >
+              <picture>
+                <source srcset="./images/desktop/img_desktop2.jpg 1x, ./images/desktop/img_desktop2@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+  
+               <source srcset="./images/tablet/img_tablet2.jpg 1x, ./images/tablet/img_tablet2@2x.jpg 2x" media="(min-width: 768px)" />
+  
+                <source srcset="./images/mobile/img_mobile2.jpg 1x, ./images/mobile/img_mobile2@2x.jpg 2x"
+                 media="(min-width: 280px)" />
+  
+              <img class="team__photo" src="images/mobile/img_mobile2.jpg" alt="Фото">
+              </picture>
+
           <div class="team-dox">
           <h3 class="team-name"> Ольга Репина</h3>
           <p class="team-profession" lang="en">Frontend Developer</p>
@@ -273,7 +298,19 @@
           </div>
         </li>
         <li class="team-card">
-          <img class="team__photo"  src="images/desktop/img_desktop3.jpg" alt="Фото" >
+            <picture>
+              <source srcset="./images/desktop/img_desktop3.jpg 1x, ./images/desktop/img_desktop3@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+            
+              <source srcset="./images/tablet/img_tablet3.jpg 1x, ./images/tablet/img_tablet3@2x.jpg 2x"
+                media="(min-width: 768px)" />
+            
+              <source srcset="./images/mobile/img_mobile3.jpg 1x, ./images/mobile/img_mobile3@2x.jpg 2x"
+                media="(min-width: 280px)" />
+            
+              <img class="team__photo" src="images/mobile/img_mobile3.jpg" alt="Фото">
+            </picture>
+
           <div class="team-dox">
           <h3 class="team-name"> Николай Тарасов</h3>
           <p class="team-profession" lang="en"> Marketing </p>
@@ -313,7 +350,19 @@
         </li>
 
         <li class="team-card">
-          <img class="team__photo"  src="images/desktop/img_desktop4.jpg" alt="Фото" >
+          <picture>
+            <source srcset="./images/desktop/img_desktop4.jpg 1x, ./images/desktop/img_desktop4@2x.jpg 2x"
+              media="(min-width: 1200px)" />
+            
+            <source srcset="./images/tablet/img_tablet4.jpg 1x, ./images/tablet/img_tablet4@2x.jpg 2x" 
+            media="(min-width: 768px)" />
+            
+            <source srcset="./images/mobile/img_mobile4.jpg 1x, ./images/mobile/img_mobile4@2x.jpg 2x" 
+            media="(min-width: 280px)" />
+            
+            <img class="team__photo" src="images/mobile/img_mobile4.jpg" alt="Фото">
+            </picture>
+
           <div class="team-dox">
           <h3 class="team-name"> Михаил Ермаков</h3>
           <p class="team-profession" lang="en">UI Designer</p>
@@ -478,10 +527,10 @@
  
       
 
-      <div class="">
+    <div>
           <p class="form__text"> Підпишіться на розсилку</p>
           
-          <div class="card__actions">
+          <!-- <div class="card__actions"> -->
           <form class="form">
             <label class="form__label">
             <input 
@@ -502,10 +551,7 @@
           </form>
         
           </div>
-
-          
-      </div>
-    </div>
+  </div>
   </footer>
 
 
