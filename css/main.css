@@ -835,6 +835,7 @@ body {
   .mobile-menu__social-list {
     display: flex;
     list-style: none;
+    align-items: center;
   }
   .mobile-menu__link-item {
     text-decoration: none;
@@ -2300,7 +2301,7 @@ body {
   }
   .footer__tablet-wrap {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
   }
   .logo-footer {
     color: var(--primary-bg-color);
