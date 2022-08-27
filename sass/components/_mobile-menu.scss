@@ -132,6 +132,7 @@
         .mobile-menu__social-list {
             display: flex;
             list-style: none;
+            align-items: center;
             }
 
  
@@ -147,14 +148,15 @@
                 //  :not(:last-child)
 
         .mobile-menu__link-item::after {
-            position: absolute;
-            content: '';
-            width: 22px;
-            height: 1px;
-            display: inline;
-            background-color:  rgba(33, 33, 33, 0.2);
-            transform: rotate(90deg);
-            // margin-left: 10px;
+          position: absolute;
+          content: '';
+          width: 22px;
+          height: 1px;
+          display: inline;
+          background-color:  rgba(33, 33, 33, 0.2);
+          transform: rotate(90deg);
+        //   margin-left: 10px;
+        //   margin-right: 10px;
             
         }
             
