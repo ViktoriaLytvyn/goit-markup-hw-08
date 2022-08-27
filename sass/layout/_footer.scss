@@ -558,14 +558,23 @@ margin-right: 10px;
 }
 
 /* футер - частина Підпишіться на розсилку */
+
+.form__wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 .form{
     display: flex;
     width: 100%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    // align-items: center;
+    // margin-left: auto;
+    margin-right: 93px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
+    text-align: left;
+
 }
     
 .form__label {
@@ -580,6 +589,8 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 20px;
+align-items: flex-start;
+text-align: start;
 }
 
 .card__actions {
