@@ -400,25 +400,20 @@
 
 
 
-        <div class="">
+        <div class="form__wrap">
             <p class="form__text"> Підпишіться на розсилку</p>
+            <form class="form">
+                <label class="form__label">
+                    <input type="email" name="user-email" class="footer-form-input" placeholder="E-mail" required
+                        pattern="/.+@.+z..+\i" minlength="5" />
+                </label>
 
-            <div class="card__actions">
-                <form class="form">
-                    <label class="form__label">
-                        <input type="email" name="user-email" class="footer-form-input" placeholder="E-mail" required
-                            pattern="/.+@.+z..+\i" minlength="5" />
-                    </label>
-
-                    <button type="submit" class="form__button">Підписатися
-                        <svg class="footer-form-input-icon">
-                            <use href=./images/sprite.svg#iconsend></use>
-                        </svg>
-                    </button>
-                </form>
-
-            </div>
-
+                <button type="submit" class="form__button">Підписатися
+                    <svg class="footer-form-input-icon">
+                        <use href=./images/sprite.svg#iconsend></use>
+                    </svg>
+                </button>
+            </form>
 
         </div>
     </div>
