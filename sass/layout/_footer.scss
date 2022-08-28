@@ -286,19 +286,20 @@ align-items: center;
 }
 
 .card__adress {
-margin-right: 165px;
+// margin-right: 165px;
 display: flex;
 flex-direction: column;
-margin-left: auto;
-margin-right: auto;
-align-items: center;}
+// margin-left: auto;
+// margin-right: auto;
+align-items: center;
+}
 
 /* футер - частина приеднуйтесь */
 .card__social {
 display: flex;
 flex-direction: column;
-margin-left: auto;
-margin-right: auto;
+// margin-left: auto;
+// margin-right: auto;
 align-items: center;        
 }
 
@@ -449,6 +450,7 @@ align-items: baseline;
 .footer__tablet-wrap {
 display: flex;
 align-items: baseline;
+// margin-right: auto;
 }
 
 .logo-footer {
@@ -563,14 +565,15 @@ margin-right: 10px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    margin-left: auto;
 }
 
 .form{
     display: flex;
     width: 100%;
-    // align-items: center;
+    align-items: center;
     // margin-left: auto;
-    margin-right: 93px;
+    // margin-right: 93px;
     flex-direction: row;
     justify-content: flex-end;
     text-align: left;
@@ -589,7 +592,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 20px;
-margin-left: 93px;
+margin-left: unset;
 align-items: flex-start;
 text-align: start;
 }
