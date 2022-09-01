@@ -2297,6 +2297,7 @@ body {
   .footer__tablet-wrap {
     display: flex;
     align-items: baseline;
+    margin-bottom: 0px;
   }
   .logo-footer {
     color: var(--primary-bg-color);
